@@ -125,3 +125,5 @@ fig.show()
 Utilizei a biblioteca Seaborn para visualizar algumas estatísticas de maneira mais simplificada.
 
 **Como é a distribuição do preço dos livros?**
+
+![Histograma e boxplot do preço dos livros](https://github.com/willyferreira/power_bi_contextos_iteracao/blob/0fff6f053665e6569efaaada03db8dc04a5b4512/images/histplot_preco_livros.png)
