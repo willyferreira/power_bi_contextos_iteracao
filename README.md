@@ -69,3 +69,21 @@ Classificação de faturamento =
         "Faturamento baixo"
     )
 ```
+### Python
+
+O objetivo de fazer a análise de dados usando Python em um curso de Power BI é de verificar que no contexto da análise de dados, podemos enfrentar alguns obstáculos de acordo com a ferramenta utilizada. O Power BI propõe várias ferramentas simples para transformar dados de maneira interativa, porém, ao importar a mesma base no Python verifiquei por exemplo que os valores expressados em dinheiro no dataset deveriam ser modificados para que fosse possível realizar operações matemáticas, pois, os campos estavam preenchidos com "R$". Além disso foi necessário substituir a vírgula (,) por (.) padrão de números decimais do Python.
+
+```
+# Retirando o R$ da variável 
+df_livros['Preço Unitário'] = df_livros['Preço Unitário'].str.replace('R$', '')
+
+#Fazendo o mesmo tratamento para a variável preço de custo
+df_livros['Preço de custo'] = df_livros['Preço de custo'].str.replace('R$', '')
+```
+
+Por final, se fez necessária a transformação do tipo da variável em *float*.
+
+```
+#Alterando o formato da variável para float
+df_livros['Preço de custo'] = df_livros['Preço de custo'].astype(float)
+```
