@@ -128,5 +128,5 @@ Utilizei a biblioteca Seaborn para visualizar algumas estatísticas de maneira m
 
 ![Histograma e boxplot do preço dos livros](https://github.com/willyferreira/power_bi_contextos_iteracao/blob/0fff6f053665e6569efaaada03db8dc04a5b4512/images/histplot_preco_livros.png)
 
-> O histograma, demonstra a distribuição dos livros pelo preço, onde há uma maior quantidade de livros na faixa entre 43,00 e 48,00,  demonstrando também uma distribuição grande entre R$55,00 e R$63,00.
+> O histograma, demonstra a distribuição dos livros pelo preço, onde há uma maior quantidade de livros na faixa entre 43,00 e 48,00,  demonstrando também uma distribuição grande entre 55,00 e 63,00.
 O boxplot demonstra que 50% da amostra está entre 45,00 e 60,00 e a mediana é 55,00.
