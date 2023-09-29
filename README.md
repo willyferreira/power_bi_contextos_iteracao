@@ -89,22 +89,30 @@ df_livros['Preço de custo'] = df_livros['Preço de custo'].astype(float)
 
 #### Análise exploratória
 Após o tratamento, chegou a hora de analisar os dados.
-Por exemplo: **Quais são os livros mais vendidos?**
+Por exemplo: 
+
+**Quais são os livros mais vendidos?**
 
 ```
 #Cria a visualização dos top 10
 df_livros.sort_values(by = 'qtd_vendas', ascending = False).head(10)
+
 #Cria o dataframe com a visualização
 df_top10vendas = df_livros.sort_values(by = 'qtd_vendas', ascending = False).head(10)
+
 #Seta o índice para o range iniciado em 1 e finalizado pelo total do range + 1
 df_top10vendas.index = range(1, len(df_top10vendas) + 1)
+
 #Reseta o índice e cria coluna com rank
 df_top10vendas.reset_index(inplace = True)
+
 #Renomeia a coluna pra ranking
 df_top10vendas.rename(columns = {'index' : 'ranking'}, inplace = True)
+
 #Mostra o dataframe
 df_top10vendas
 ```
+
 ```
 # Criação da tabela Top 10 - Vendas
 fig = ff.create_table(df_top10vendas[['ranking', 'titulo', 'qtd_vendas']], height_constant = 20)
@@ -112,3 +120,8 @@ fig.show()
 ```
 
 ![Top 10 - Quantidade de vendas](https://github.com/willyferreira/power_bi_contextos_iteracao/blob/6ab7076880d259e7de1c9bb935e1a232c27f7dbc/images/top10_qtdvendas.png)
+
+##### Visualizações
+Utilizei a biblioteca Seaborn para visualizar algumas estatísticas de maneira mais simplificada.
+
+**Como é a distribuição do preço dos livros?**
