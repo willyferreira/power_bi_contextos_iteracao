@@ -1,5 +1,5 @@
 ## Curso Alura | Power BI: Contextos e iteração
-O curso teve como ensinamentos os seguintes:
+O curso teve como ensinamentos os seguintes assuntos:
 
 - Criação de colunas calculadas e medidas
 - Lidando com erros no DAX
