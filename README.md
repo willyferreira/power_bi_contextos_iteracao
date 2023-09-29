@@ -67,7 +67,7 @@ Classificação de faturamento =
     )
 ```
 ### Python
-O objetivo de fazer a análise de dados usando Python em um curso de Power BI é de verificar que no contexto da análise de dados, podemos enfrentar alguns obstáculos de acordo com a ferramenta utilizada. 
+O objetivo de fazer a análise de dados usando Python em um curso de Power BI é de verificar que no contexto da análise de dados, podemos enfrentar alguns obstáculos para manipulação das informações, de acordo com a ferramenta utilizada. 
 
 #### Tratamento dos dados
 O Power BI propõe várias ferramentas simples para transformar dados de maneira interativa, porém, ao importar a mesma base no Python verifiquei por exemplo que os valores expressados em dinheiro no dataset deveriam ser modificados para que fosse possível realizar operações matemáticas, pois, os campos estavam preenchidos com "R$". Além disso foi necessário substituir a vírgula (,) por (.) padrão de números decimais do Python.
